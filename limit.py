@@ -9,4 +9,26 @@ ex) limit([1,2,3,4,5], None, 3) = [1,2,3]
 Complexity = O(n)
 """
 def limit(ipt, minv,maxv):
+    if minv == None and maxv == None:
+        return ipt
+    elif minv == None and maxv != None:
+        for i in ipt:
+            if i > maxv:
+                ipt.remove(i)
+    elif minv != None and maxv == None:
+        for i in ipt:
+            if i < minv:
+                ipt.remove(i)
+    else:
+        for i in ipt:
+            if i < minv:
+                ipt.remove(i)
+            if i > maxv:
+                ipt.remove(i)
+    return ipt
+
+a = [1,2,3,4,5,6]
+print(limit(a,2,4))
+
+         
  
