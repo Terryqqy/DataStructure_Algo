@@ -20,17 +20,18 @@ def garage(initial,fin):
     the place in final. If yes then go to check next one.
     """
     while ini != fin:
-	zero = ini.index(0)#that is the pin point
-	if zero != fin.index(0):
-	    pos = ini.index(fin[zero])#python could return the place of zero element
-	    ini[zero],ini[pos] = ini[pos], ini[zero]#swap them!  so aewsome
-	else:
+        zero = ini.index(0)
+        #that is the pin point
+        if zero != fin.index(0):
+            pos = ini.index(fin[zero])#python could return the place of zero element
+            ini[zero],ini[pos] = ini[pos], ini[zero]#swap them!  so aewsome
+        else:
 	    for i in range(len(ini)):
 		if ini[i] != fin[i]:
 		    ini[zero], ini[i] = ini[i], ini[zero]
 		    break
 	seq.append(ini[::])#careful with the indent!
-	steps +=1
+        steps +=1
     return steps, seq
 
 a = [1,2,3,0,4]
@@ -38,4 +39,4 @@ b = [0,3,2,1,4]
 opta, optb = garage(a,b)
 print 'the steps are', opta,' the sequence is ', optb
 
-	    
+

@@ -15,4 +15,4 @@ def flatt(ipt_arr, opt_arr= None): #the default of the output array is None by d
 
 a = [1,1,2,[1,2,3],1,[3,[2,3]],2]
 print(flatt(a))
-
+           
