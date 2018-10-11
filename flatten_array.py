@@ -1,5 +1,5 @@
 """
-input a nested array we need to flatten it into one array
+input a nested array we need to flatten it into one array.
 """
 from collections import Iterable
 
