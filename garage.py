@@ -4,7 +4,7 @@ of the parking lot and the final state. Each step we are only allowed to
 move a car
 out of its place and move it into the empty spot.
 The goal is to find out the least movement needed to rearrange
-the parking lot from the initial state to the final state.
+the parking lot from the initial state to the final state.Hey
 """
 """
 a[x:y:z] means : x is the former xth data is removed, y is after yth data is removed , so [x to y] is keeped, z is the stride it is going to take
