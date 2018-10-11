@@ -1,6 +1,6 @@
 '''
 Given a list lst and a number N, create a new list
-that contains each number of the list at most N times without reordering.
+that contains each number of the list at most N times without reordering.f
 '''
 def delete_nth(array, n):
 	retval = []
