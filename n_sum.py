@@ -10,6 +10,13 @@ Example:
             target = 0,
         return [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
 """
+class Node:
+    def __init__(self, data):
+        self.data = data
+    
+    def insert(self, data, formerdata, level):
+        self.
+
 def n_sum(ipt, resultnumber, target):
     """
     Get the total number of combination of the possible results.
@@ -27,4 +34,7 @@ def n_sum(ipt, resultnumber, target):
     while count!=0:
         for j in 
    
+    eachlevel(
+
+
     
