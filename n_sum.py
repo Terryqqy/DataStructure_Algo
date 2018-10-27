@@ -23,4 +23,8 @@ def n_sum(ipt, resultnumber, target):
     To iterate all possible result and store in the dict
     """
     a = [[]]
+    count = resultnumber
+    while count!=0:
+        for j in 
+   
     
