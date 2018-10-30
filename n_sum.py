@@ -10,6 +10,7 @@ Example:
             target = 0,
         return [[-2, -1, 1, 2], [-2, 0, 0, 2], [-1, 0, 0, 1]]
 """
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -35,6 +36,6 @@ def n_sum(ipt, resultnumber, target):
         for j in 
    
     eachlevel(
-
-
     
+
+        
