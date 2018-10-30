@@ -30,12 +30,27 @@ def n_sum(ipt, resultnumber, target):
     """
     To iterate all possible result and store in the dict
     """
-    a = [[]]
-    count = resultnumber
-    while count!=0:
-        for j in 
    
-    eachlevel(
+def eachlevel(ipt_notvisited, ipt_visited, level):
+    if level = 0 :
+        sumofvisited = sum(ipt_visited)
+        if sumofvisited = target:
+            output.append(ipt_visited)
+    else:
+    for i in range(ipt_notvisited):
+        tempNotVist = ipt_notvisited[::]
+        tempVist = ipt_visited[::]
+        tempVist.append(tempNotVist.pop(i))
+        eachlevel(tempNotVist, tempVist, level-1)
+    return 0
+
+
+
+
+
+
+
+
     
 
         
