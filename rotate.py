@@ -9,8 +9,7 @@ there are at least 3 different ways to solve this problem.
 
 def rotate(ipt, n):
     out = []
-    if n > len(ipt):
-        return "Error n > array length"
+    n = n%len(ipt)
     while(n != 0):
         out.append(ipt.pop(-1))
         n-=1
