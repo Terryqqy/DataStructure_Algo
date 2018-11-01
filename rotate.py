@@ -6,3 +6,19 @@ Note:
 Try to come up as many solutions as you can,
 there are at least 3 different ways to solve this problem.
 """
+
+def rotate(ipt, n):
+    out = []
+    if n > len(ipt):
+        return "Error n > array length"
+    while(n != 0):
+        out.append(ipt.pop(-1))
+        n-=1
+    out.reverse()
+    for i in ipt:
+        out.append(i)
+    return out
+
+a = [1,2,3,4,5,6,7]
+print(rotate(a,3))
+
