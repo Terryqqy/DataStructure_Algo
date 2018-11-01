@@ -21,7 +21,9 @@ def rotate(ipt, n):
 a = [1,2,3,4,5,6,7]
 print(rotate(a,3))
 
-"""def rotate_v3(array, k):
+"""
+This one is shortter
+def rotate_v3(array, k):
     if array is None:
             return None
                 length = len(array)
