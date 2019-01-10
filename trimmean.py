@@ -9,4 +9,18 @@ if index of array is larger or smaller than desired ratio, we don't
 compute it.
 Compleity: O(n)
 """
-def trimmean(ipt,
+def trimmean(ipt, perc):
+    ipt.sort()
+    summ = 0
+    ratio = perc/200
+    for idx in range(len(ipt)):
+        if idx/len(ipt) < ratio or idx/len(ipt) > 1-ratio:
+            pass
+        else:
+            summ += ipt[idx]
+    
+    return summ/len(ipt)
+
+            
+a = [1,2,3,4,5,6,7,8,9,10]
+print(trimmean(a, 20))
