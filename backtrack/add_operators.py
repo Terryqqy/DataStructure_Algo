@@ -1,4 +1,5 @@
 """
+Leetcode 282 Expression Add operator
 Given a string that contains only digits 0-9 and a target value,
 return all possibilities to add binary operators (not unary) +, -, or *
 between the digits so they prevuate to the target value.
@@ -10,11 +11,15 @@ Examples:
 "00", 0 -> ["0+0", "0-0", "0*0"]
 "3456237490", 9191 -> []
 """
-
-def add_operators(num, target):
-    allnum = []
-    for i in num:
-        allnum.append(int(i))
-        for j in range(i,num):
+"""
+ipt is the input number
+tgt is the target value
+expr is the expression to return 
+pos is the position of last fucked number
+prev is the value of former number group
+curr is the result of current operation
+"""
+def DFS(ipt,tgt, expr, pos, prev, curr):
+    for i in range(
 
         
