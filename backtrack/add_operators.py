@@ -19,7 +19,25 @@ pos is the position of last fucked number
 prev is the value of former number group
 curr is the result of current operation
 """
-def DFS(ipt,tgt, expr, pos, prev, curr):
-    for i in range(
+def DFS(ipt,tgt, expr, pos, prev, curr, opt):
+    if pos == len(ipt):#where we need to end
+        if tgt == prev:
+            opt.append(expr)
+        return
+    for i in range(pos,len(ipt)):
+        if i != pos and ipt[pos] ==  '0': #if the start is 0 then we stop this one. 08 09 074 like this
+            break
+        now = int(ipt[pos:i+1])
+        if pos == 0:
+            DFS(ipt,tgt, str(now) , i+1, now, now, opt)
+        else:
+            DFS(ipt, tgt, expr + "+" + str(now), i+1, prev + now, now, opt)
+            DFS(ipt, tgt, expr + "-" + str(now), i+1, prev - now, now, opt)
+            DFS(ipt, tgt, expr + "*" + str(now), i+1, prev - curr + curr*now, curr * now, opt)
+
+opt = []
+a = "105"
+DFS(a, 5, "", 0, 0, 0,opt)
+print(opt)
 
         
